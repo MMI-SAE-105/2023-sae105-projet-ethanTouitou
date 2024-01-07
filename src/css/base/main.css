@@ -1,0 +1,15 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: var(--space3x);
+    padding-right: var(--space3x);
+    padding-top: 80px;
+}

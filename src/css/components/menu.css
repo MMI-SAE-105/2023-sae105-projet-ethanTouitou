@@ -1,0 +1,98 @@
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--noir);
+    transition: all .4s ease-in-out;
+}
+
+.menu--open {
+    visibility: visible;
+    opacity: 1;
+    background-color: var(--gris-clair);
+    width: 100%;
+    margin-top: 80px;
+}
+
+
+.menu__list {
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color: var(--blanc);
+    list-style-type: none;
+}
+
+.menu__item {
+    margin-top: 15%;
+}
+
+.menu__link {
+    color: var(--noir);
+    text-decoration: none;
+}
+
+.menu-btn {
+    position: relative;
+    z-index: 3;
+    width: 30px;
+    background: var(--blanc);
+    border: 0;
+    margin-top: 11px;
+    margin-right: 50px;
+}
+
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    content: '';
+    background: var(--noir);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 12;
+    transition: all .4s ease-in-out;
+}
+
+.menu-btn__bar::before {
+    top: -10px;
+    z-index: 12;
+}
+
+.menu-btn__bar::after {
+    top: 10px;
+    z-index: 12;
+}
+
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.menu-btn:not(.menu-btn--open) .menu-btn__bar,
+.menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
+.menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
+    background-color: var(--noir);
+}
+
+.menu__item_primary {
+    color: var(--blanc);
+    font-family: var(--font-website);
+    font-size: var(--heading-2);
+    font-weight: 500;
+    padding-top: 2rem;
+}
