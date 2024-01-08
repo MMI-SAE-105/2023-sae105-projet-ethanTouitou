@@ -9,3 +9,11 @@
     margin-right: auto;
     position: relative;
 }
+
+.article__text {
+    color: var(--noir);
+    font-size: var(--text);
+    font-family: var(--font-website);
+    font-weight: 400;
+    padding: var(--space2x);
+}
