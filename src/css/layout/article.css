@@ -17,3 +17,11 @@
     font-weight: 400;
     padding: var(--space2x);
 }
+
+.article__title {
+    font-size: var(--heading-1);
+    font-family: var(--font-website);
+    font-weight: 500;
+    color: var(--noir);
+    text-align: center;
+}

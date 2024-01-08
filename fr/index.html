@@ -64,7 +64,7 @@
         </section>
 
         <section x-data="{ 'cards' : async ()=> {
-                      const resp = await fetch('/src/json/card-oeuvres.json');
+                      const resp = await fetch('/src/json/cards.json');
                       return await resp.json();
                 }}">
             <h1 class="article__title">À découvrir</h1>
