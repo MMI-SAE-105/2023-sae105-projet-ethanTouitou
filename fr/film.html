@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus 2000!</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ atTop: true }">
+
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop 
+        }">
+        <div class="header__logo">
+            <h3 class="header__logo-text"> <a class="header__link-logo" href="index.html">Nimbus 2000!</a></h3>
+        </div class="header__end">
+        <a class="header__menu-btn" href="#">EN</a>
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/replique.html">Nombus 2000!</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/film.html">La Chambre des Secrets
+                        (film)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/realisatrice.html">J.K. Rowling</a>
+                </li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/friselivres.html">Frise des
+                        livres</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/galerie.html">Galerie</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/livre.html">La Chambre des Secrets
+                        (livre)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/musique.html">Musique des films</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Fin du menu -->
+    </header>
+    <main class="container">
+        <h1 class="article__title linetitle">Harry Potter et la Chambre des Secrets (film)</h1>
+
+    </main>
+    <footer class="footer">
+        <a class="footer__lien-title" href="/index.html">
+            <h3 class="footer__title">Nimbus 2000!</h3>
+        </a>
+
+        <nav>
+            <ul class="list-unstyled">
+                <li class="footer__list-menu"><a class="footer__list-item" href="/fr/apropos.html">A propos</a>
+                </li>
+                <li class="footer__list-menu"><a class="footer__list-item" href="/fr/autreprojets.html">Autres
+                        projets</a>
+                </li>
+                <li class="footer__list-menu"><a class="footer__list-item" href="/fr/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <address class="footer__adress">Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au
+                département MMI Montbéliard</address>
+        </div>
+        <a href="http://www.iut-bm.univ-fcomte.fr/pages/fr/dpt-mmi---actualites-18542.html"><img
+                class="footer__logo-mmi" src="/public/img/MMI_-_logo_quadri_-white 1.webp" alt="logo MMI"></a>
+
+    </footer>
