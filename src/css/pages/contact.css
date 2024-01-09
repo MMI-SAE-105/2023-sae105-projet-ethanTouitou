@@ -1,0 +1,34 @@
+.contact__form-label {
+    display: block;
+    font-family: var(--font-website);
+    font-weight: 500;
+    font-size: var(--heading-3);
+    margin-bottom: 0.2rem;
+}
+
+.contact__form-input {
+    font-family: var(--font-website);
+    font-weight: 500;
+    font-size: var(--heading-3);
+    width: 80%;
+    margin-bottom: 1.5rem;
+    border-radius: 3px;
+    border: 2px solid var(--noir);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contact__form-button {
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+    font-size: var(--button);
+    font-family: var(--font-website);
+    font-weight: 700;
+    margin-left: 70%;
+    color: var(--blanc);
+    background-color: var(--noir);
+    border-radius: 10px;
+    border: 1px solide var(--noir);
+    text-align: center;
+    cursor: pointer;
+}

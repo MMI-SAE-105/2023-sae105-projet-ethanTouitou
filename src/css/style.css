@@ -12,7 +12,7 @@
 @import "components/menu.css";
 @import "components/cards.css";
 /* Pages */
-
+@import"pages/contact.css";
 /*Layout*/
 @import "layout/header.css";
 @import "layout/footer.css";
