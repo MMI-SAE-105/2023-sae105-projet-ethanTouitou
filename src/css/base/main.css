@@ -10,5 +10,6 @@ img {
 
 .container {
     padding-left: var(--space3x);
+    padding-right: var(--space1x);
     padding-top: 80px;
 }
