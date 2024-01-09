@@ -30,3 +30,11 @@
     max-width: 100%;
     padding-left: var(--space3x);
 }
+
+.article__intertitre {
+    font-family: var(--font-sans-serif);
+    font-size: var(--heading-2);
+    font-weight: 500;
+    margin-bottom: -1rem;
+    margin-top: 2rem;
+}
