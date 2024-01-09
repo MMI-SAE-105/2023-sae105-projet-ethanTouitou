@@ -54,7 +54,7 @@
 .menu-btn__bar::after {
     content: '';
     background: var(--noir);
-    height: 5px;
+    height: 3px;
     width: 100%;
     position: absolute;
     left: 0;
