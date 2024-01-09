@@ -25,3 +25,8 @@
     color: var(--doree);
     text-align: center;
 }
+
+.BA__film {
+    max-width: 100%;
+    padding-left: var(--space3x);
+}
