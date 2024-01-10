@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus 2000!</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ atTop: true }">
+
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop 
+        }">
+        <div class="header__logo">
+            <h3 class="header__logo-text"> <a class="header__link-logo" href="index.html">Nimbus 2000!</a></h3>
+        </div class="header__end">
+        <a class="header__menu-btn" href="#">EN</a>
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/replique.html">Nombus 2000!</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/film.html">La Chambre des Secrets
+                        (film)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/realisatrice.html">J.K. Rowling</a>
+                </li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/friselivres.html">Frise des
+                        livres</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/galerie.html">Galerie</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/livre.html">La Chambre des Secrets
+                        (livre)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/musique.html">Musique des films</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Fin du menu -->
+    </header>
+
+    <main class="container">
+        <h1 class="article__title linetitle">J.K Rowling</h1>
+        <figure class="card2">
+            <div class="card2__img">
+                <img class="card2__img-retouch" src="/public/img/immgg.webp" alt="affiche harry potter">
+            </div>
+            <div class="card2__caption">
+                <h3 class="card2__title"><a class="card2__link">J.K Rowling</a></h3>
+            </div>
+        </figure>
+        <h3 class="article__intertitre">La Créatrice Magistrale : J.K. Rowling et l'Origine de l'Univers de Harry Potter
+        </h3>

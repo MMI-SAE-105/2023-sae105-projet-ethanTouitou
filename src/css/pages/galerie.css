@@ -1,5 +1,5 @@
 .galerie__arrow {
     width: 375px;
     padding-top: var(--space3x);
-    padding-bottom: var(--space3x);
+    padding-bottom: var(--space1x);
 }
