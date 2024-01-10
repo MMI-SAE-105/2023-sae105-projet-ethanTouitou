@@ -47,7 +47,7 @@
                       const resp = await fetch('/src/json/cardsautreprojet.json');
                       return await resp.json();
                 }}">
-            <h1 class="article__title">À découvrir</h1>
+            <h1 class="article__title">Autres projets</h1>
 
             <template x-for="card in cards" :key="card.id">
                 <article class="section__card card">

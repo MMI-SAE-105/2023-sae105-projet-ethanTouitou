@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus 2000!</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ atTop: true }">
+
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop 
+        }">
+        <div class="header__logo">
+            <h3 class="header__logo-text"> <a class="header__link-logo" href="index.html">Nimbus 2000!</a></h3>
+        </div class="header__end">
+        <a class="header__menu-btn" href="/fr/apropos.html">FR</a>
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item_primary"><a class="menu__link" href="/en/replique.html">Nombus 2000!</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/film.html">The Chamber of Secrets
+                        (film)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/realisatrice.html">J.K. Rowling</a>
+                </li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/friselivres.html">Frieze of
+                        books</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/galerie.html">Gallery</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/livre.html">The Chamber of Secrets
+                        (book)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/musique.html">Film music</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Fin du menu -->
+    </header>
+    <main class="container">
+        <section>
+            <h1 class="article__title linetitle">À propos</h1>
+            <img src="/public/img/Mini Avatar.webp" alt="Avatar">
+            <p class="article__text">
+                My name is Ethan TOUITOU and I'm a student in my first year of MMI (Multimedia and Internet Skills) at
+                the Montbéliard
+                IUT.
+                Montbéliard.</p>
+            <p class="article__text">
+                This site, called "It's a Nimbus 2000!", aims to introduce the Harry Potter theme by presenting
+                one of the films
+                with a book the frieze of films and book.</p>
+            <p class="article__text">
+                You can contact me if you wish via the contact page available at the foot of the page, or
+                or via the
+                networks also available at the bottom of the page I answer to all</p>
+        </section>
+        <section>
+            <h1 class="article__title linetitle">Glossaire</h1>
+            <p class="article__text">
+                Eponym: "Eponymous hero" refers to a historical figure who gave his name to a town, a tribe,
+                etc. Their heroism
+                has been elevated to such a level that its name becomes a bearer of importance and designates something
+                relative
+                to the character.</p>
+            <p class="article__text">
+                In this case Harry Potter, who gave his name to the films</p>
+            <p class="article__text">
+                Saga: the word "saga" is used in everyday language to refer to a series of novels in several parts.
+                several parts</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="footer__lien-title" href="index.html">
+            <h3 class="footer__title">Nimbus 2000!</h3>
+        </a>
+
+        <nav>
+            <ul class="list-unstyled">
+                <li class="footer__list-menu"><a class="footer__list-item" href="/en/apropos.html">About us</a>
+                </li>
+                <li class="footer__list-menu"><a class="footer__list-item" href="/en/autreprojets.html">Other
+                        projects</a>
+                </li>
+                <li class="footer__list-menu"><a class="footer__list-item" href="/en/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <address class="footer__adress">This site is a project carried out as part of an educational exercise in the
+                MMI Montbéliard department</address>
+        </div>
+        <a href="http://www.iut-bm.univ-fcomte.fr/pages/fr/dpt-mmi---actualites-18542.html"><img
+                class="footer__logo-mmi" src="/public/img/MMI_-_logo_quadri_-white 1.webp" alt="logo MMI"></a>
+
+    </footer>

@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Nombus 2000!",
+        "excerpt": "The line 'It's a Nimbus 2000!' is a captivating moment from the world of Harry Potter.",
+        "link": "/en/replique.html",
+        "picture": "/public/img/nimbus2000.webp",
+        "picture_desc": "Nimbus 2000"
+    },
+    {
+        "id": 2,
+        "title": "La Chambre des Secrets (film)",
+        "excerpt": "Harry Potter and the Chamber of Secrets is the second instalment in the Harry Potter film saga.",
+        "link": "/fr/film.html",
+        "picture": "/public/img/film.webp",
+        "picture_desc": "La Chambre des Secrets (film)"
+    },
+    {
+        "id": 3,
+        "title": "J.K. Rowling",
+        "excerpt": "Joanne Jo Rowling, known as J.K. Rowling, is the celebrated British author behind the fantasy saga 'Harry Potter'.",
+        "link": "/fr/realisatrice.html",
+        "picture": "/public/img/img_1.webp",
+        "picture_desc": "J.K. Rowling"
+    },
+    {
+        "id": 4,
+        "title": "La Chambre des Secrets (livre)",
+        "excerpt": "In this continuation of the story, the young wizard Harry Potter begins his second year at Hogwarts School of Witchcraft and Wizardry.",
+        "link": "/fr/livre.html",
+        "picture": "/public/img/img_1 (1).webp",
+        "picture_desc": "La Chambre des Secrets (livre)"
+    }
+]
