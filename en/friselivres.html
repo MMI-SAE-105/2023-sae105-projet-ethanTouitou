@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus 2000!</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ atTop: true }">
+
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop 
+        }">
+        <div class="header__logo">
+            <h3 class="header__logo-text"> <a class="header__link-logo" href="index.html">Nimbus 2000!</a></h3>
+        </div class="header__end">
+        <a class="header__menu-btn" href="/fr/friselivres.html">FR</a>
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item_primary"><a class="menu__link" href="/en/replique.html">Nombus 2000!</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/film.html">The Chamber of Secrets
+                        (film)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/realisatrice.html">J.K. Rowling</a>
+                </li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/friselivres.html">Frieze of
+                        books</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/galerie.html">Gallery</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/livre.html">The Chamber of Secrets
+                        (book)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/musique.html">Film music</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Fin du menu -->
+    </header>
+    <main class="container">
+        <h1 class="article__title linetitle">Frise chronologique des livres</h1>
+        <h3 class="article__intertitre">Voici la frise des livre Harry Potter ecrit de J.K Rowling trié par date de
+            sortie.</h3>
+        <div class="frise">
+            <div class="img_frise">
+                <div class="date_frise">1997</div>
+                <img src="/public/img/image 4.webp" alt="oeuvre 3">
+
+            </div>
+            <div class="img_frise">
+                <div class="date_frise">1998</div>
+                <img src="/public/img/image 5.webp" alt="oeuvre 4">
+            </div>
+            <div class="img_frise">
+                <div class="date_frise">1999</div>
+                <img src="/public/img/image 6.webp" alt="oeuvre 2">
+
+            </div>
+            <div class="img_frise">
+                <div class="date_frise">2000</div>
+                <img src="/public/img/image 7.webp" alt="oeuvre 1">
+
+            </div>
+            <div class="img_frise">
+                <div class="date_frise">2003</div>
+                <img src="/public/img/image 8.webp" alt="oeuvre 1">
+
+            </div>
+            <div class="img_frise">
+                <div class="date_frise">2005</div>
+                <img src="/public/img/image 9.webp" alt="oeuvre 1">
+
+            </div>
+            <div class="img_frise">
+                <div class="date_frise">2007</div>
+                <img src="/public/img/image 10.webp" alt="oeuvre 1">
+
+            </div>
+            <div class="fleche_frise">
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <a class="footer__lien-title" href="index.html">
+            <h3 class="footer__title">Nimbus 2000!</h3>
+        </a>
+
+        <nav>
+            <ul class="list-unstyled">
+                <li class="footer__list-menu"><a class="footer__list-item" href="/en/apropos.html">About us</a>
+                </li>
+                <li class="footer__list-menu"><a class="footer__list-item" href="/en/autreprojets.html">Other
+                        projects</a>
+                </li>
+                <li class="footer__list-menu"><a class="footer__list-item" href="/en/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <address class="footer__adress">This site is a project carried out as part of an educational exercise in the
+                MMI Montbéliard department</address>
+        </div>
+        <a href="http://www.iut-bm.univ-fcomte.fr/pages/fr/dpt-mmi---actualites-18542.html"><img
+                class="footer__logo-mmi" src="/public/img/MMI_-_logo_quadri_-white 1.webp" alt="logo MMI"></a>
+
+    </footer>

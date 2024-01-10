@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus 2000!</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ atTop: true }">
+
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop 
+        }">
+        <div class="header__logo">
+            <h3 class="header__logo-text"> <a class="header__link-logo" href="index.html">Nimbus 2000!</a></h3>
+        </div class="header__end">
+        <a class="header__menu-btn" href="/fr/galerie.html">FR</a>
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item_primary"><a class="menu__link" href="/en/replique.html">Nombus 2000!</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/film.html">The Chamber of Secrets
+                        (film)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/realisatrice.html">J.K. Rowling</a>
+                </li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/friselivres.html">Frieze of
+                        books</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/galerie.html">Gallery</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/livre.html">The Chamber of Secrets
+                        (book)</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/musique.html">Film music</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Fin du menu -->
+    </header>
+    <main>
+        <section class="container">
+            <h1 class="article__title article__title-galerie">Gallery</h1>
+            <figure class="card2">
+                <div class="card2__img">
+                    <img class="card2__img-retouch" src="/public/img/image 11.webp" alt="affiche harry potter">
+                </div>
+                <div class="card2__caption">
+                    <h3 class="card2__title"><a class="card2__link">HARRY POTTER AND THE WIZARD SCHOOL 2001</a></h3>
+                </div>
+            </figure>
+            <p class="article__text">The beginning of the magical destiny of a boy like no other. - In 2001,
+                the adaptation of
+                Harry Potter
+                was an event.
+                Steven Spielberg came close to directing it, but in the end his colleague Chris Columbus was chosen.
+                Columbus
+                (who wrote
+                the screenplay for Gremlins, produced by Spielberg). The director of Mrs Doubtfire
+                and
+                I Missed the Plane
+                take audiences into the world of Hogwarts, introducing them to the rules and heroes of the
+                this
+                future saga
+                magical saga. Harry Potter and the Philosopher's Stone is far from being the fans' favourite episode,
+                but it remains one
+                of the most popular.
+                one of the most
+                important.
+            </p>
+        </section>
+        <img class="galerie__arrow" src="/public/img/Line 2.webp" alt="">
+        <section class="container">
+            <figure class="card2">
+                <div class="card2__img">
+                    <img class="card2__img-retouch" src="/public/img/image 12.webp" alt="affiche harry potter">
+                </div>
+                <div class="card2__caption">
+                    <h3 class="card2__title"><a class="card2__link">HARRY POTTER AND THE CHAMBER OF SECRETS 2002</a>
+                    </h3>
+                </div>
+            </figure>
+            <p class="article__text">In the bowels of Hogwarts, evil awakens. The whole team is back for this
+                second episode, in the direct
+                Harry Potter and the Philosopher's Stone. Harry, Ron and Hermione once again face the inevitable return
+                return of
+                of Voldemort and explore the mysteries of Hogwarts, in an adventure that is considered to be one of the
+                weakest in the
+                series.
+                weakest in the
+                saga. This is due to an over-stretched plot (2h30) and a feeling of repetition after the first film.
+                Harry Potter and the
+                Chamber of Secrets plays a central role in the saga and the fight against Voldemort, but remains one of
+                the
+                least memorable
+                memorable.
+            </p>
+        </section>
+        <img class="galerie__arrow" src="/public/img/Line 2.webp" alt="">
+        <section class="container">
+            <figure class="card2">
+                <div class="card2__img">
+                    <img class="card2__img-retouch" src="/public/img/image 13.webp" alt="affiche harry potter">
+                </div>
+                <div class="card2__caption">
+                    <h3 class="card2__title"><a class="card2__link">HARRY POTTER AND THE PRISONER OF AZKABAN 2004</a>
+                    </h3>
+                </div>
+            </figure>
+            <p class="article__text">Secrets from the past resurface. Everything imagined will be transformed. -
+                Often considered one of the
+                Harry Potter and the Prisoner of Azkaban marks the first turning point in the saga.
+                saga. Gone are
+                childhood: Harry, Hermione and Ron enter adolescence and its troubles, and with them, the franchise
+                evolves.
+                The adventure becomes darker, more serious, and the atmosphere shifts towards something more
+                disturbing. The colour palette
+                palette shifts towards blue and black, and Harry Potter 3 remains one of the most visually
+                visually. The
+                Alfonso Cuaron's touch, the Oscar-winning director of Gravity, has a lot to do with it.
+            </p>
+        </section>
+        <img class="galerie__arrow" src="/public/img/Line 2.webp" alt="">
+
+        <section class="container">
+            <figure class="card2">
+                <div class="card2__img">
+                    <img class="card2__img-retouch" src="/public/img/image 14.webp" alt="affiche harry potter">
+                </div>
+                <div class="card2__caption">
+                    <h3 class="card2__title"><a class="card2__link">HARRY POTTER AND THE COUPE DE FEU 2007</a>
+                    </h3>
+                </div>
+            </figure>
+            <p class="article__text">The rebellion begins at Hogwarts... - From Harry Potter and the Order of the
+                Phoenix,
+                the saga is directed by David Yates,
+                until its grand finale - and the director continues to lead the universe through to Fantastic Beasts. A
+                choice that ensures
+                consistency, and creates a great movement with these last four opuses. More spectacular and
+                Hollywood,
+                Order of the Phoenix is unquestionably one of the most effective and solid episodes. Dolores Umbridge
+                (excellent Imelda
+                Staunton) will go down as one of the franchise's most memorable antagonists, and the disappearance of
+                Sirius Black
+                (Gary Oldman) due to the incredible Bellatrix (Helena Bonham Carter) strikes another blow for fans.
+                From this
+                fifth instalment, there's no denying it: Voldemort is back.</p>
+        </section>
+        <img class="galerie__arrow" src="/public/img/Line 2.webp" alt="">
+        <section class="container">
+            <figure class="card2">
+                <div class="card2__img">
+                    <img class="card2__img-retouch" src="/public/img/image 15.webp" alt="affiche harry potter">
+                </div>
+                <div class="card2__caption">
+                    <h3 class="card2__title"><a class="card2__link">HARRY POTTER AND THE HALF-BLOOD PRINCE 2009
+                        </a>
+                    </h3>
+                </div>
+            </figure>
+            <p class="article__text">Dark secrets revealed to face the final battle. - The world is
+                begins to take on the dark colours of
+                Voldemort in Harry Potter and the Half-Blood Prince. Harry prepares his battle against his sworn enemy,
+                with the help of
+                Dumbledore. The mystery of Voldemort is gradually revealed, and the hellish mission of
+                Harry, Ron and
+                Hermione. The sixth instalment in the saga adapted by J.K. Rowling marks another stage in the adventure,
+                with the
+                the disappearance of one of the most important characters. And if love continues to torment the hearts
+                of the
+                heroes, it is
+                the final confrontation with Voldemort.</p>
+        </section>
+        <img class="galerie__arrow" src="/public/img/Line 2.webp" alt="">
+        <section class="container">
+            <figure class="card2">
+                <div class="card2__img">
+                    <img class="card2__img-retouch" src="/public/img/image 16.webp" alt="affiche harry potter">
+                </div>
+                <div class="card2__caption">
+                    <h3 class="card2__title"><a class="card2__link">HARRY POTTER ET LE PRINCE DE SANG-MÊLÉ 2009
+                        </a>
+                    </h3>
+                </div>
+            </figure>
+            <p class="article__text">Destroy an artefact to weaken the dark world. - The final stretch
+                for Harry Potter and his friends
+                Hermione and Ron. As Voldemort's power grows and the world becomes a battlefield,
+                the trio set out
+                search for the last Horcruxes, essential if they are to kill the Dark Lord. A
+                hellish pursuit
+                for the heroes, now alone in the world, with no other option but to believe in themselves in order to
+                move forward.
+                While the film
+                suffers from a slightly problematic pace, since J.K. Rowling's last book was cut into two parts, Harry
+                parts, Harry
+                Potter and the Deathly Hallows - Part 1 kicks off the final countdown to the big finish.</p>
+        </section>
+        <img class="galerie__arrow" src="/public/img/Line 2.webp" alt="">
+        <section class="container">
+            <figure class="card2">
+                <div class="card2__img">
+                    <img class="card2__img-retouch" src="/public/img/image 17.webp" alt="affiche harry potter">
+                </div>
+                <div class="card2__caption">
+                    <h3 class="card2__title"><a class="card2__link">HARRY POTTER AND THE DEATHLY HALLOWS (PART 2
+                            PART) 2011
+                        </a>
+                    </h3>
+                </div>
+            </figure>
+            <p class="article__text">The final battle against the forces of evil. - The end is finally here. After eight
+                films, Harry
+                films, Harry Potter finally
+                Voldemort in his final adventure. It's hard to live up to such success, such expectations, but
+                expectations, but
+                David Yates has succeeded in delivering a spectacular conclusion. For Daniel Radcliffe, Emma Watson and
+                Rupert Grint,
+                it's their last turn as Harry, Hermione and Ron.</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a class="footer__lien-title" href="index.html">
+            <h3 class="footer__title">Nimbus 2000!</h3>
+        </a>
+
+        <nav>
+            <ul class="list-unstyled">
+                <li class="footer__list-menu"><a class="footer__list-item" href="/en/apropos.html">About us</a>
+                </li>
+                <li class="footer__list-menu"><a class="footer__list-item" href="/en/autreprojets.html">Other
+                        projects</a>
+                </li>
+                <li class="footer__list-menu"><a class="footer__list-item" href="/en/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <address class="footer__adress">This site is a project carried out as part of an educational exercise in the
+                MMI Montbéliard department</address>
+        </div>
+        <a href="http://www.iut-bm.univ-fcomte.fr/pages/fr/dpt-mmi---actualites-18542.html"><img
+                class="footer__logo-mmi" src="/public/img/MMI_-_logo_quadri_-white 1.webp" alt="logo MMI"></a>
+
+    </footer>
