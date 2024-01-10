@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "title": "Playing the saw alban",
+        "excerpt": "Alban Chatelet, Saw 1",
+        "link": "https://glowing-gumption-bcfa22.netlify.app/",
+        "picture": "/public/img/image24(2).webp",
+        "picture_desc": "Saw 1"
+    },
+    {
+        "id": 2,
+        "title": "Cinéplique",
+        "excerpt": "Le hobbit 1, Theo Gasner",
+        "link": "https://frabjous-heliotrope-03eac7.netlify.app/",
+        "picture": "/public/img/image24(3).webp",
+        "picture_desc": "Le hobbit 1"
+    },
+    {
+        "id": 3,
+        "title": "QUOOTE",
+        "excerpt": "Into the spiderverse, maxime de moura.,",
+        "link": "https://quoote.maximedemoura.fr/",
+        "picture": "/public/img/image 24 (5).webp",
+        "picture_desc": "Into the spiderverse"
+    },
+    {
+        "id": 4,
+        "title": "ReplicaStreet",
+        "excerpt": "The Wolf of Wall Street, Antoine Dejeux",
+        "link": "/fr/livre.html",
+        "picture": "/public/img/image 24 (6).webp",
+        "picture_desc": "The Wolf of Wall Street"
+    },
+    {
+        "id": 5,
+        "title": "Wizard's heart",
+        "excerpt": "the travelling castle, marina meloni",
+        "link": "https://wizardsheart.mmeloni.fr/",
+        "picture": "/public/img/image 24 (7).webp",
+        "picture_desc": "the travelling castle"
+    },
+    {
+        "id": 6,
+        "title": "Randoala",
+        "excerpt": "Once upon a forest, Lucas Bardey",
+        "link": "https://randoala.lucas-bardey.fr/",
+        "picture": "/public/img/image 24 (8).webp",
+        "picture_desc": "Once upon a forest"
+    },
+    {
+        "id": 7,
+        "title": "GrootSpeak",
+        "excerpt": "guardians of the galaxy, Rémi Lombard",
+        "link": "grootspeak.remilombard.fr",
+        "picture": "/public/img/image 24 (9).webp",
+        "picture_desc": "guardians of the galaxy"
+    },
+    {
+        "id": 8,
+        "title": "I'll be back",
+        "excerpt": "Terminator, Arnaud Knoebel",
+        "link": "/fr/livre.html",
+        "picture": "/public/img/image 24 (10).webp",
+        "picture_desc": "Terminator"
+    }
+]
