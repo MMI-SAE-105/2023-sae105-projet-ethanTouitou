@@ -11,6 +11,7 @@
     justify-content: space-between;
     transition: all .3s ease-in-out;
     vertical-align: middle;
+    border-bottom: 2px solid var(--bleu-fonce);
 }
 
 .header__end {
