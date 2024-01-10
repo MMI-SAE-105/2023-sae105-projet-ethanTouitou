@@ -15,7 +15,7 @@
     font-size: var(--text);
     font-family: var(--font-website);
     font-weight: 400;
-    padding: var(--space2x);
+    padding: var(--space1x);
 }
 
 .article__title {
@@ -24,6 +24,7 @@
     font-weight: 500;
     color: var(--doree);
     text-align: center;
+    padding-top: var(--space3x);
 }
 
 .BA__film {
