@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--blanc);
+    background-color: var(--bleu-fonce);
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
 
 .header__link-logo {
     text-decoration: none;
-    color: var(--noir);
+    color: var(--blanc);
 }
 
 .header__logo-text {
@@ -52,5 +52,5 @@
     margin-right: 30px;
     text-decoration: none;
     font-family: var(--font-website);
-    color: var(--noir);
+    color: var(--blanc);
 }

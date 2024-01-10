@@ -42,7 +42,7 @@
     position: relative;
     z-index: 3;
     width: 30px;
-    background: var(--blanc);
+    background: var(--bleu-fonce);
     border: 0;
     margin-top: 3px;
     margin-right: 50px;
@@ -53,7 +53,7 @@
 .menu-btn__bar::before,
 .menu-btn__bar::after {
     content: '';
-    background: var(--noir);
+    background: var(--blanc);
     height: 3px;
     width: 100%;
     position: absolute;
@@ -87,7 +87,7 @@
 .menu-btn:not(.menu-btn--open) .menu-btn__bar,
 .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
 .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
-    background-color: var(--noir);
+    background-color: var(--blanc);
 }
 
 .menu__item_primary {
